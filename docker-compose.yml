@@ -1,0 +1,10 @@
+version: "3"
+services:
+  node.gsc.service:
+    build: .
+    container_name: "node.gsc.service"
+    environment:
+      HOST: "http://localhost"
+      PORT: 4000
+    ports:
+      - "4000:4000"
